@@ -10,7 +10,7 @@ for (let i = 1 ; i <= 100 ; i++) {
         console.log('FizzBuzz');
         // stampo elementi fizzbuzz
         let FizzBuzz = ` <div class="col">
-        <div class="mycard bg_danger p-3 d-flex align-items-center justify-content-center">
+        <div class="mycard bg_danger d-flex align-items-center justify-content-center">
             FizzBuzz
         </div>
         <!-- /.mycard -->
