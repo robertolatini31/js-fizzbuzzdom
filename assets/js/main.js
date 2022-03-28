@@ -1,3 +1,6 @@
+// collego la mia riga html
+const RowElement = document.querySelector('.row');
+ 
 // Scrivi un programma che stampi in console i numeri da 1 a 100
 
 for (let i = 1 ; i <= 100 ; i++) {
@@ -5,17 +8,34 @@ for (let i = 1 ; i <= 100 ; i++) {
     // Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz
     if ( ((i % 3) == 0) && ((i % 5) == 0) ) {
         console.log('FizzBuzz');
+        // stampo elementi fizzbuzz
+        let FizzBuzz = `<div class="bg_danger col p-3 d-flex align-items-center justify-content-center">FizzBuzz</div>
+        <!-- /.cols -->`;
+        RowElement.insertAdjacentHTML('beforeend', FizzBuzz);
     }
     // Per i multipli di 3 stampi “Fizz” al posto del numero
     else if ((i % 3) == 0) {
         console.log('Fizz');
+        // stampo elementi fizz
+        let Fizz = `<div class="bg_success col p-3  d-flex align-items-center justify-content-center">Fizz</div>
+        <!-- /.cols -->`;
+        RowElement.insertAdjacentHTML('beforeend', Fizz);
     }
     // Per i multipli di 5 stampi Buzz.
     else if ((i % 5) == 0) {
         console.log('Buzz');
+        // stampo elementi buzz
+        let Buzz = `<div class="bg_warning col p-3  d-flex align-items-center justify-content-center">Buzz</div>
+        <!-- /.cols -->`;
+        RowElement.insertAdjacentHTML('beforeend', Buzz);
     }
     else {
         console.log(i);
+        // stampo elementi i
+        let html_i = `<div class="bg_secondary col p-3  d-flex align-items-center justify-content-center">${i}</div>
+        <!-- /.cols -->`;
+        RowElement.insertAdjacentHTML('beforeend', html_i);
+        
     }
     
 }
