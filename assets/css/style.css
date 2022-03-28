@@ -14,10 +14,10 @@
 }
 
 
-/* .my_cols {
-   width: 100px;
-   height: 100px;
-} */
+.mycard {
+    aspect-ratio: 1;
+    
+}
 
 .bg_primary {
     background-color: var(--bg_primary);

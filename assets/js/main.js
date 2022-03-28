@@ -9,31 +9,51 @@ for (let i = 1 ; i <= 100 ; i++) {
     if ( ((i % 3) == 0) && ((i % 5) == 0) ) {
         console.log('FizzBuzz');
         // stampo elementi fizzbuzz
-        let FizzBuzz = `<div class="bg_danger col p-3 d-flex align-items-center justify-content-center">FizzBuzz</div>
-        <!-- /.cols -->`;
+        let FizzBuzz = ` <div class="col">
+        <div class="mycard bg_danger p-3 d-flex align-items-center justify-content-center">
+            FizzBuzz
+        </div>
+        <!-- /.mycard -->
+    </div>
+    <!-- /.cols -->`;
         RowElement.insertAdjacentHTML('beforeend', FizzBuzz);
     }
     // Per i multipli di 3 stampi “Fizz” al posto del numero
     else if ((i % 3) == 0) {
         console.log('Fizz');
         // stampo elementi fizz
-        let Fizz = `<div class="bg_success col p-3  d-flex align-items-center justify-content-center">Fizz</div>
-        <!-- /.cols -->`;
+        let Fizz = ` <div class="col">
+        <div class="mycard bg_success d-flex align-items-center justify-content-center">
+            Fizz
+        </div>
+        <!-- /.mycard -->
+    </div>
+    <!-- /.cols -->`;
         RowElement.insertAdjacentHTML('beforeend', Fizz);
     }
     // Per i multipli di 5 stampi Buzz.
     else if ((i % 5) == 0) {
         console.log('Buzz');
         // stampo elementi buzz
-        let Buzz = `<div class="bg_warning col p-3  d-flex align-items-center justify-content-center">Buzz</div>
-        <!-- /.cols -->`;
+        let Buzz = ` <div class="col">
+        <div class="mycard bg_warning d-flex align-items-center justify-content-center">
+            Buzz
+        </div>
+        <!-- /.mycard -->
+    </div>
+    <!-- /.cols -->`;
         RowElement.insertAdjacentHTML('beforeend', Buzz);
     }
     else {
         console.log(i);
         // stampo elementi i
-        let html_i = `<div class="bg_secondary col p-3  d-flex align-items-center justify-content-center">${i}</div>
-        <!-- /.cols -->`;
+        let html_i = ` <div class="col">
+        <div class="mycard bg_secondary d-flex align-items-center justify-content-center">
+            ${i}
+        </div>
+        <!-- /.mycard -->
+    </div>
+    <!-- /.cols -->`;
         RowElement.insertAdjacentHTML('beforeend', html_i);
         
     }
